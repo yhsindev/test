@@ -1,10 +1,10 @@
 summary <- function(input_path, output_path) {
   library(math)
-  data <- read.csv('input.csv')
+  data <- read.csv(input_path)
   weight_max <- round(max(data$weight),2)
   height_max <- round(max(data$height),2)
-  output <- data.frame(set="input.csv", weight = weight_max, height = height_max)
-  write.csv(output, file="output.csv", col.names = TRUE)
+  output <- data.frame(file=input_path, weight = weight_max, height = height_max)
+  write.csv(output, file=output_path, col.names = TRUE)
 }
 
 summary
