@@ -1,5 +1,4 @@
 summary <- function(input_path, output_path) {
-  library(math)
   data <- read.csv(input_path)
   weight_max <- round(max(data$weight),2)
   height_max <- round(max(data$height),2)
