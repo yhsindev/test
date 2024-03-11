@@ -5,3 +5,4 @@ summary <- function(input_path, output_path) {
   output <- data.frame(set=basename(input_path), weight = weight_max, height = height_max)
   write.csv(output, file=output_path, row.names = FALSE)
 }
+summary
